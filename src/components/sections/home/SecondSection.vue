@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-10 lg:py-20 relative lg:overflow-hidden">
+  <section class="w-full  lg:py-20 relative lg:overflow-hidden">
     <div class="max-w-[1136px] w-full m-auto pl-24 pr-2 xl:pr-0 xl:pl-0">
       <div class="w-full grid lg:grid-cols-2 gap-10 lg:-space-y-20">
         <div class="flex flex-col items-start space-y-2">
@@ -30,11 +30,9 @@
      
     </div>
 
-    <div class=" w-full absolute bottom-6">
-        <img src="../../../assets/images/pathdot.png" class=" w-full" alt="">
-    </div>
+    <DotPath class=" w-full absolute bottom-14"/>
     <Circle class="w-[119.39px] h-[119.39px]  rounded-full  rotate-90 absolute top-40 -left-16 "/>
-  </div>
+  </section>
 </template>
 
 
@@ -42,6 +40,7 @@
 <script setup>
 import { onMounted } from "@vue/runtime-core";
 import Circle from "../../UI/Circle.vue"
+import DotPath from "../../UI/DotPath.vue"
 
 onMounted(() => {
 //animatie svg shake
