@@ -5,10 +5,13 @@
       <slot></slot>
     </div>
     <SideBar />
+
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import Header from "../includes/Header.vue";
 import SideBar from "../includes/SideBar.vue";
+import Footer from "../includes/Footer.vue";
 </script>

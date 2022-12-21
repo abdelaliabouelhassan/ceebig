@@ -1,6 +1,6 @@
 <template>
-     <div class=" w-full pt-40 pb-10 relative overflow-hidden">
-         <div class="w-full  absolute top-28 left-0">
+     <section class=" w-full pt-40 pb-10 relative overflow-hidden">
+         <div class="w-full  absolute top-10 left-0">
             <img
                 src="../../../assets/images/bg2.png"
                 alt=""
@@ -12,7 +12,7 @@
                 <ContentSlideProgress :data="data" />
          </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

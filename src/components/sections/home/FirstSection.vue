@@ -10,10 +10,12 @@
     <div class="max-w-[1136px] w-full m-auto pl-24 pr-2 xl:pr-0 xl:pl-0">
       <div class="w-full flex flex-col sm:-space-y-5 xl:-space-y-14 relative">
         <span
+          id="first"
           class="text-white font-bold font-markpro text-[30px] sm:text-[60px] md:text-[90px] xl:text-[128px] z-10"
           >Turn your vision</span
         >
         <span
+         id="second"
           class="text-white text-[30px] sm:text-[60px] md:text-[90px] xl:text-[128px] font-normal font-marcellus text-end z-10"
           >into Reality</span
         >
@@ -67,7 +69,8 @@ import BookSession from "../../UI/BookSession.vue";
 onMounted(() => {
   const circle1 = document.getElementById("circle1");
   const circle2 = document.getElementById("circle2");
-
+  const first = document.getElementById("first");
+  const second = document.getElementById("second");
   document.addEventListener("mousemove", (e) => {
     let width = window.innerWidth;
     if (width > 768) {
@@ -78,5 +81,19 @@ onMounted(() => {
       circle2.style.transform = `translate(${x * 50}px, ${y * 50}px)`;
     }
   });
+
+  document.addEventListener("scroll", () => {
+    let width = window.innerWidth;
+    
+      let scroll = window.scrollY;
+      first.style.transform = `translateX(-${scroll / 3}px)`;
+      second.style.transform = `translateX(${scroll / 3}px)`;
+    
+  });
+
+  
+
+
+
 });
 </script>

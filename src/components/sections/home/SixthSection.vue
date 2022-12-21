@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full py-20 relative">
+    <section class=" w-full py-20 relative">
         <div class="w-full h-[600px] absolute -top-28 left-0">
         <img
             src="../../../assets/images/bg1.png"
@@ -14,5 +14,5 @@
                 <p class=" text-base text-white font-markpro font-normal text-start md:text-center max-w-[650px]">From start-up to enterprise, we have a variety of solutions to help scale your business, and we go above and beyond to customize business solutions for you! Set up a consulting session to learn more!</p>
             </div>
         </div>
-    </div>
+    </section>
 </template>

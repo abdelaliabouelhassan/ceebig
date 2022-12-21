@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-full py-10">
+    <section class=" w-full py-10">
         <div class="max-w-[1136px] w-full m-auto pl-24 pr-2 xl:pr-0 xl:pl-0 z-10 relative space-y-28">
           <div class="flex flex-col items-start space-y-2">
             <div
@@ -16,7 +16,7 @@
             <ContentSlide class=" lg:pl-28" :data="data"/>
          </div>
         </div>
-    </div>
+    </section>
 </template>
 
 

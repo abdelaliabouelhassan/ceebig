@@ -10,6 +10,8 @@
     <EightSection />
     <NineSection />
     <TenSection />
+    <ElevenSection />
+    <TwelveSection />
   </div>
 </template>
 
@@ -24,4 +26,6 @@ import SeventhSection from "../components/sections/home/SeventhSection.vue";
 import EightSection from "../components/sections/home/EightSection.vue";
 import NineSection from "../components/sections/home/NineSection.vue";
 import TenSection from "../components/sections/home/TenSection.vue";
+import ElevenSection from "../components/sections/home/ElevenSection.vue";
+import TwelveSection from "../components/sections/home/TwelveSection.vue";
 </script>

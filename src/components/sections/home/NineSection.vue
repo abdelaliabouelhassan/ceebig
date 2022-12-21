@@ -1,11 +1,11 @@
 <template>
-    <div class=" w-full py-20 md:py-40 relative overflow-hidden">
-        <div class="w-full h-[600px] absolute -top-28 left-0">
-        <img
-            src="../../../assets/images/bg1.png"
-            alt=""
-            class="w-full h-full  opacity-10"
-        />
+    <section class=" w-full py-20 md:py-40 relative overflow-hidden">
+        <div class="w-full h-[600px] absolute top-5 left-0">
+            <img
+                src="../../../assets/images/bg1.png"
+                alt=""
+                class="w-full h-full  opacity-10"
+            />
         </div>
         <div class="max-w-[1236px] w-full m-auto pl-24 pr-2 xl:pr-0 xl:pl-0 z-10 relative space-y-20">
             <div class=" w-full flex flex-col  items-center space-y-5">
@@ -28,7 +28,7 @@
             <Testimonial :users="users"/>
         </div>
         </div>
-    </div>
+    </section>
 </template>
 
 
