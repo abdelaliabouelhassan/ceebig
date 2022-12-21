@@ -6,7 +6,7 @@
           <div
             class="lg:max-w-[466px] text-white w-full font-markpro font-medium text-[36px] md:text-[40px] lg:text-[56px] lg:leading-[70.98px]"
           >
-            Business Consulting
+            Engineering Consulting
           </div>
           <div class="border-0 border-l border-stroke text-white font-markpro font-light text-lg md:text-xl lg:text-2xl pl-4">
             A strategic plan and vision sets a good course for the business
