@@ -9,7 +9,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M28.0241 17.7342L41.0875 21.2346C41.8891 21.4494 42.3649 22.2734 42.1501 23.075L38.6497 36.1384C38.4349 36.9401 37.6109 37.4158 36.8093 37.201C36.0077 36.9862 35.5319 36.1622 35.7467 35.3606L38.3081 25.8014L16.7238 38.263L15.2212 35.6603L36.8054 23.1986L27.2462 20.6372C26.4446 20.4224 25.9689 19.5984 26.1837 18.7968C26.3984 17.9952 27.2224 17.5194 28.0241 17.7342Z" fill="white"/>
                     </svg>
                    </button>
-                   <span class=" font-markpro font-normal text-white text-xl sm:text-2xl group-hover:underline decoration-wavy">{{item.title}}</span>
+                   <span class=" font-markpro font-normal text-white text-xl sm:text-2xl group-hover:text-opacity-60 duration-300  ">{{item.title}}</span>
                 </div>
             </div>
             <div class=" w-full flex flex-col items-end space-y-4 xl:pl-14">

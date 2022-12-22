@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class=" w-full flex flex-col items-start space-y-4">
-            <h1 class=" text-white font-normal text-lg md:text-2xl font-marcellus hover:underline decoration-wavy cursor-pointer duration-500 hover:text-opacity-50">{{props.title}}</h1>
+            <h1 class=" text-white font-normal text-lg md:text-2xl font-marcellus  cursor-pointer duration-500 hover:text-opacity-50">{{props.title}}</h1>
             <span class=" text-base md:text-lg text-white font-normal font-markpro text-opacity-50">{{props.date}}</span>
         </div>
         <div class=" w-full flex justify-end">

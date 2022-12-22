@@ -34,14 +34,14 @@
 
         <div class=" w-full flex items-center justify-center pt-10">
             <div class=" flex items-center space-y-2 flex-col">
-               <span class=" text-white font-markpro text-lg font-medium"> {{users[maxIndex > 5 ? 2 : getActiveIndex()].name}}</span>
+                <span class=" text-white font-markpro text-lg font-medium"> {{users[maxIndex > 5 ? 2 : getActiveIndex()].name}}</span>
                 <span class=" text-[#D3D0FF] font-normal font-markpro text-sm">{{users[maxIndex > 5 ? 2 : getActiveIndex()].position}}</span>
             </div>
         </div>
 
 
         <div class=" w-full flex items-center justify-between pt-2 sm:hidden">
-                        <ArrowButton @click="Prev" direction="left" class="md:w-[60px] md:h-[60px] w-[40px] h-[40px]"/>
+            <ArrowButton @click="Prev" direction="left" class="md:w-[60px] md:h-[60px] w-[40px] h-[40px]"/>
             <ArrowButton @click="Next" direction="right" class="md:w-[60px] md:h-[60px] w-[40px] h-[40px]"/>
 
         </div>
@@ -50,6 +50,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity"
+import { onMounted } from "@vue/runtime-core"
 import ArrowButton from "./ArrowButton.vue"
 
 
@@ -62,15 +63,20 @@ const props = defineProps({
     }
 })
 
+const emit = defineEmits(['changed'])
+
 
 const users = ref(props.users)
 
 const Next = () => {
     users.value.push(users.value.shift())
+    emit('changed', users.value[maxIndex > 5 ? 2 : getActiveIndex()])
+    
 }
 
 const Prev = () => {
     users.value.unshift(users.value.pop())
+    emit('changed', users.value[maxIndex > 5 ? 2 : getActiveIndex()])
 }
 
 const getActiveIndex = () => {
@@ -79,7 +85,9 @@ const getActiveIndex = () => {
 
 const maxIndex = ref(users.value.length)
 
-
+onMounted(() => {
+    emit('changed', users.value[maxIndex > 5 ? 2 : getActiveIndex()])
+})
 
 
 
