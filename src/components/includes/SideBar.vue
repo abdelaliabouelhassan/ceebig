@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" absolute top-0 left-0 border-0 border-r border-stroke h-full pt-48 w-20 "
+    class=" absolute top-0 left-0 border-0 border-r border-stroke h-full pt-48 w-20 z-50 "
   >
     <div class="flex flex-col items-center space-y-56">
       <div class="rotate-90 rounded-full bg-[#2E2E2E]">
