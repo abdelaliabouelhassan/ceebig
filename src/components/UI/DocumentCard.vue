@@ -135,21 +135,4 @@ const text5id  = "text-" + Math.random().toString(36).substr(2, 9);
         );  
         
     });
-
-
-    onUnmounted(() => {
-        const paper1 = document.getElementById(paper1id);
-        const text1 = document.getElementById(text1id);
-        const text2 = document.getElementById(text2id);
-        const text3 = document.getElementById(text3id);
-        const text4 = document.getElementById(text4id);
-        const text5 = document.getElementById(text5id);
-        paper1.pause();
-        text1.pause();
-        text2.pause();
-        text3.pause();
-        text4.pause();
-        text5.pause();
-    });
-
 </script>

@@ -30,8 +30,5 @@ import { onMounted, onUnmounted } from "@vue/runtime-core";
         
     });
 
-    onUnmounted(() => {
-        const circle = document.getElementById(id);
-        circle.remove();
-    });
+
 </script>
